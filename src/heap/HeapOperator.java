@@ -30,7 +30,7 @@ public class HeapOperator {
      * @param parentIndex 要下沉的父节点
      * @param length      堆的有效大小
      */
-    private static void downAdjust(int[] array, int parentIndex, int length) {
+    static void downAdjust(int[] array, int parentIndex, int length) {
         // temp保存父节点值，用于最后的赋值
         int temp = array[parentIndex];
         int childIndex = 2 * parentIndex + 1;
@@ -68,4 +68,5 @@ public class HeapOperator {
         buildHeap(array);
         System.out.println(Arrays.toString(array));
     }
+
 }
